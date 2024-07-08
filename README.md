@@ -13,5 +13,18 @@
 - npm i -D @types/express  //adding the definition now 
 - this will add @types folder in the node_modules with added type definitions
 - now when you hover to the app.express in the ts file we will get the right resolution to the type
-- 
+- npx tsc --init //create the ts config file, we can also install ts globally(this wont need npx in command)
+- //then
+- recommendation is to install the typescript locally , global installations can sometimes conflict
+- the tsconfig file will also have options to transpile to any es version. default in latest here is es2016
+- e.g target,module 
+- change "rootDir": "./src", //as all the ts files is going to be in this folder 
+- change "outDir": "./dist", //where all the transpiled js code is going to be
+- we can do other typechecking changes as well e.g
+    "strict": true,                                      /* Enable all strict type-checking options. */ <br/>
+    "noImplicitAny": true,                            /* Enable error reporting for expressions and declarations with an implied 'any' type. */<br/>
+    "strictNullChecks": true,                         /* When type checking, take into account 'null' and <br/>'undefined'. */
+    "strictFunctionTypes": true,                      /* When assigning functions, check to ensure parameters and the return values are subtype-compatible. */<br/>
+-        
+
 
