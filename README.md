@@ -31,6 +31,7 @@
 - update package.json for the script to build and run 
 - npm i -D nodemon  //install nodemon local dependency
 - update the script tag for running the application 
+- e.g "build": "tsc --build","start": "node ./dist/index.js", "start:dev": "nodemon ./src/index.ts"
 - nodemon for typescript project need tsnode , nodejs interpreter 
 - npm -D ts-node 
 - npm run start:dev //without ts-node this command will throw tsnode not found error 
