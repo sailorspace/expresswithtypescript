@@ -25,6 +25,14 @@
     "noImplicitAny": true,                            /* Enable error reporting for expressions and declarations with an implied 'any' type. */<br/>
     "strictNullChecks": true,                         /* When type checking, take into account 'null' and <br/>'undefined'. */
     "strictFunctionTypes": true,                      /* When assigning functions, check to ensure parameters and the return values are subtype-compatible. */<br/>
--        
+- build the project 
+- npx tsc --build  //this will use all the options in the tsconfig to build with 
+- this creates a js file transpiled from typescript ready to be run 
+- update package.json for the script to build and run 
+- npm i -D nodemon  //install nodemon local dependency
+- update the script tag for running the application 
+- nodemon for typescript project need tsnode , nodejs interpreter 
+- npm -D ts-node 
+- npm run start:dev //without ts-node this command will throw tsnode not found error 
 
 
