@@ -5,7 +5,7 @@ import { type Express } from "express-serve-static-core";
 
 describe('/api/users', () => {
 
-    let app: Express = createApp();
+    let app: Express;
     beforeAll(() => {
         app = createApp();
     })
