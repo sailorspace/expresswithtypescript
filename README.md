@@ -35,5 +35,30 @@
 - nodemon for typescript project need tsnode , nodejs interpreter 
 - npm -D ts-node 
 - npm run start:dev //without ts-node this command will throw tsnode not found error 
+- ts-node ./src/index.ts //another way of running the ts file 
+- "scripts": { <br/>
+    "test": "echo \"Error: no test specified\" && exit 1",<br/>
+    "build": "tsc --build",// to build every ts file for the project so that we have all transpiled js<br/>
+    "start": "node ./dist/index.js",//actual command to finally run in prod env to run app<br/>
+    "start:dev": "nodemon ./src/index.ts" //dev run command with nodemon watch<br/>
+  },<br/>
+- TypeScript uses the .d.ts declaration files to load type information about a library written in JavaScript. 
+- npm i express-session //for session enablement in nodejs 
+- npm i -D @types/express-session //we need the type definition support for typescript 
+- ############--Testing--############
+- npm i -D jest //jest unti testing framework 
+- npm i -D ts-jest @types/jest //instlling required jest definition suites and definitions 
+- //now set up configuration file with ts jest ,as we need jes and ts-jest binaries in the @types folder 
+- npx ts-jest config:init <br/>
+Jest configuration written to "E:\Study\PRACTICE\expresswithtypescript\jest.config.js".
+//if some error with this install ejs globally or set the dependency in the package.json 
+- create test file with extension .test.ts
+- modify the test script in the package.json file 
+- "test": "jest",
+- npm run test  "or" npm test
+- npm i -D supertest //install supertest
+- npm i -D @types/supertes //install the typed definition to run the binaries
+- 
+- 
 
 
